@@ -58,7 +58,6 @@ async function askQuestion() {
     }
     $("answer").textContent = result.answer;
     $("data").innerHTML = renderData(result.data);
-    $("sql").textContent = result.sql + (result.params?.length ? "\nParameters: " + JSON.stringify(result.params) : "");
     $("result").hidden = false;
     $("status").textContent = "Answer ready.";
   } catch {
